@@ -63,6 +63,7 @@ main {
   height: 110vh;
 }
 main div {
+  object-fit: fill;
   height: 100vh;
   width: 100%;
   padding-top: 35%;
