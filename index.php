@@ -10,6 +10,7 @@ require_once "class/ArticleManager.php";
 <main>
 
     <div>
+        
         <h3>Image</h3>
         <h3>Titre</h3>
         <h3>Description</h3>
@@ -17,23 +18,21 @@ require_once "class/ArticleManager.php";
 
         <?php
 
-        $article1 = new Articles("Veste", "Une veste en cuire française", 14475, "vetementhomme.jpg");
-        $article2 = new Articles("Jeste", "Une veste en cuire française", 14775, "vetementhomme.jpg");
-
         $articleManager = new ArticleManager;
-        $articleManager->ajoutArticle($article1);
-        $articleManager->ajoutArticle($article2);
+        $articleManager->chargementArticle();
 
         ?>
 
 
         <?php for ($i = 0; $i < count($articleManager->getArticle()); $i++) : ?>
-
-
+          
+  
             <img src="" <?= $articleManager->getArticle()[$i]->getImageArticle(); ?> alt="">
-            <?= $articleManager->getArticle()[$i]->getNomArticle(); ?>
+            <?= $articleManager->getArticle()[$i]->getNomArticle(); ?> 
             <?= $articleManager->getArticle()[$i]->getDescriptionArticle(); ?>
+            <?= $articleManager->getArticle()[$i]->getTailleArticle(); ?> <br>
 
+            
         <?php endfor; ?>
 
     </div>
@@ -56,16 +55,31 @@ require_once "class/ArticleManager.php";
 </section>
 
 <footer>
-    <div>
-        <h4>CONTACT</h4>
-        <input placeholder="Nom">
-        <input placeholder="Email">
-        <input placeholder="Message">
-    </div>
-    <div>
-        <h4>Copyright</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam neque deserunt tempore, voluptatem sunt non enim odit, sit ex nesciunt ad iste illo, hic fuga dolorum saepe nam unde expedita!</p>
-    </div>
+
+    <div class="main-block">
+      <form action="">
+        <h1>Une question ? Contactez-nous !</h1>
+        <div class="info">
+          <input class="fname" type="text" name="name" placeholder="Nom">
+          <input type="text" name="name" placeholder="Email">
+          <input type="text" name="name" placeholder="Telephone">
+          <input type="text" name="name" placeholder="Adresse">
+        </div>
+        <p>Message</p>
+        <div>
+          <textarea rows="4"></textarea>
+        </div>
+        <button type="button" href="">Envoyer</button>
+      </form>
+
+      <div class="divcr">
+      <h4 class="h4cr">Copyright</h4>
+      <p class="pcr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam neque deserunt tempore, voluptatem sunt non enim odit, sit ex nesciunt ad iste illo, hic fuga dolorum saepe nam unde expedita!</p>
+
+    </div>   
+</div>
+
+
 </footer>
 
 </body>

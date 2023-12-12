@@ -58,6 +58,7 @@ CREATE TABLE Articles (
     idArticles_Articles INT AUTO_INCREMENT NOT NULL,
     nomArticle_Articles VARCHAR(60),
     description_Articles VARCHAR(600),
+    taille_Articles INT(60),
     ref_Articles INT(60),
     image_Articles VARCHAR(60),
     Administrateur_idAdministrateur_Administrateur INT(60),
@@ -68,19 +69,22 @@ INSERT INTO
     `Articles` (
         `nomArticle_Articles`,
         `description_Articles`,
+        `taille_Articles`,
         `ref_Articles`,
         `image_Articles`
     )
 VALUES
     (
-        'Jean_Francais',
+        'Jean Francais',
         'Un article made in 100% france',
+        36,
         1,
         'Image_Jean_Français'
     ),
     (
-        'Pantalon_Hexa',
+        'Pantalon Hexa',
         'Un pentalon aux forme particuliere',
+        38,
         2,
         'Image_Pantalon_Hexa'
     );

@@ -124,34 +124,107 @@ footer{
     width: 100%;
     background-image: url('images/fondcontact.jpg');
     background-size: cover;
-
-    div{
-        text-align: center;
-        margin-top: 3vh;    
-
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+    color: #666;
+    
+    h1 {
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: #313e46;
+    }
+    p {
+    margin: 0 0 5px;
+    }
+    .main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     }
 
-    input{
-        display: flex;
-        margin-top: 3vh;
-        margin-left: 20%;
-        margin-right: 20%;
-        width: 60%;
-        height: 20vh;
-        text-align: center;
-        background-color: rgb(184, 173, 173);
-        border: none;
+
+    @keyframes float {
+        0% {
+          transform: translateX(0px);
+          opacity: 50%;
+        }
+        50% {
+
+          transform: translateX(400px);
+          opacity: 0%;
+        }
+        100% {
+
+          transform: translateX(8000px);
+          opacity: 0%;
+        }
+      }
+    
+    form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #f5f5f5; 
+    background: #f5f5f5; 
     }
-    p{
-        font-size: x-large;
-        color: white;
-        text-align:center
+    input, textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #6e6666;
+    outline: none;
     }
-    h4{
-        font-size: xx-large;
-        color: white;
+    input::placeholder {
+    color: #666;
     }
-}
+    button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #303133; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    }
+    button:hover {
+    background: #394247;
+    cursor:pointer;
+
+
+    // A modif 
+    }
+    button:hover{
+
+        animation: float 1.5s;  
+    }        
+    }
+
+    // --
+.divcr{
+    position:relative;
+    text-align: center;
+    background:scroll;
+    margin-top: 6%;
+    color: whitesmoke;
+    font-size: large;
+    
+    }
+
+
+
+
+
+    @media (min-width: 568px) {
+    .main-block {
+    flex-direction: row;
+    }
+    .left-part, form {
+    width: 50%;
+    }
+    }
 
 
 

@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Panier</title>
-</head>
-<body>
-    <header>
-        <div>
-            <a href="http://127.0.0.1:5500/"><img src="/Images/Logo.jpg" alt="Logo"></a>
-        </div >
-        <input placeholder="Search...">
-        <div>
-            <a href="/Articles/Détaille/index.html"><img src="/Images/panier.png" alt=""></a>
-        </div>
-        <nav>Menu</nav>
-    </header>
+<?php ob_start();
 
+$content = ob_get_clean();
+require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG/template.php";
+require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG//class/Article.class.php";
+require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG/class/ArticleManager.php";
+
+?>
     <main>
         <div>
             <H2>Mon Panier</H2>
