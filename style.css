@@ -180,7 +180,7 @@ footer button:hover {
   background: #394247;
   cursor: pointer;
 }
-footer button:hover {
+footer button:hover .main-block {
   animation: float 1.5s;
 }
 .divcr {

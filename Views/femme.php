@@ -1,9 +1,9 @@
 <?php ob_start();
 
 $content = ob_get_clean();
-require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG/template.php";
-require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG//class/Article.class.php";
-require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG/class/ArticleManager.php";
+require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG/Views/template.php";
+require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG/Models/Article.class.php";
+require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG/Models/ArticleManager.php";
 
 ?>
     <main>
