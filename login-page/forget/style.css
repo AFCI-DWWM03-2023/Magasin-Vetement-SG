@@ -43,7 +43,7 @@ body {
 }
 .box-form .left .overlay {
   padding: 30px;
-  width: 100%;
+  width: 80vh;
   height: 100%;
   background-image: url(pexels-godisable-jacob-914668.jpg);
   background-repeat: no-repeat;
@@ -84,7 +84,7 @@ body {
   }
 }
 .box-form .right h5 {
-  font-size: 6vmax;
+  font-size: 60px;
   line-height: 0;
 }
 .box-form .right p {
@@ -130,6 +130,10 @@ label {
   display: block;
   position: relative;
   margin-left: 30px;
+}
+
+.right{
+  width: 50%;
 }
 
 label::before {
