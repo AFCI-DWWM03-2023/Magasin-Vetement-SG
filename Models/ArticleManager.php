@@ -34,7 +34,7 @@ class ArticleManager extends BDConnexion{
     
     public function ajoutArticleBD($nom,$desc,$taille,$ref,$image){
 
-        $req ="INSERT INTO articles(nomArticle_Articles,description_Articles,taille_Articles,ref_Articles,image_Articles,)
+        $req ="INSERT INTO articles(nomArticle_Articles,description_Articles,taille_Articles,ref_Articles,image_Articles)
         values (:nomArticle_Articles,:description_Articles,:taille_Articles,:ref_Articles,:image_Articles)";
 
         $stmt =$this->getBDD()->prepare($req);

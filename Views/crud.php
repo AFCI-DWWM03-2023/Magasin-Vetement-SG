@@ -8,28 +8,30 @@ require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG/Models/ArticleMan
 ?>
 
 <main>
-<h2>Femmes</h2>
-<div>
-<table>
-    <h2>Clients</h1>
-        <tr>
+<tr>
             <th>Image</th>
             <th>Titre</th>
             <th>Nombre de pages</th>
             <th>Actions</th>
         </tr>
 
-
+    <?php for($i=0;$i<count($articles);$i++) : ?>
 
         <tr>
-            <td>sdf</td>
-            <td>sdg</td>
-            <td>sdgze</td>
+            <td><img src="public/images/<?= $articles[$i]->getImage(); ?>" alt=""></td>
+            <td><a href="<?= URL ?>articles/l/<?= $articles[$i]->getIdArticle();?>"><?= $articles[$i]->getTitre();?></a></td>
+            <td><?= $articles[$i]->getNbPages(); ?></td>
+            <td>
+                <form method="POST" action="<?= URL ?>articles/s/<?=$articles[$i]->getIdArticle();?>"onSubmit="return confirm('Voulez vous vraiment supprimer le article ?');">
+                <button type="submit">Supprimer</button>
+                </form>
+                <td><a href="<?= URL?>articles/m/<?=$articles[$i]->getIdArticle();?>"><button>Modifier</button></a></td>
+            </td>
         </tr>
 
-
+        <?php endfor; ?>
     </table>
-</div>
+    <a href="<?= URL ?>articles/a"><button>Ajouter</button></a>
 </main>
 
 </body>

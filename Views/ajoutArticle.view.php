@@ -16,4 +16,5 @@ require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG/Models/ArticleMan
     <input type="file" id="image" name="image" value="">
     <br><br>
     <input type="submit" value="Valider">
+    
 </form>
