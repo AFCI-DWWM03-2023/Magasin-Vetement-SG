@@ -80,7 +80,7 @@ class ArticleController{
     }
 
     public function modificationArticle($id){
-        $article = $this->articleManager->getArticleById($id);
+        $articles = $this->articleManager->getArticleById($id);
         require "Views/modifierArticle.view.php";
 
     }

@@ -1,10 +1,10 @@
 <?php ob_start();
 
 $content = ob_get_clean();
-require_once "Views/template.php";
-require_once "Models/Article.class.php";
-require_once "Models/Model.class.php";
-require_once "Models/ArticleManager.php";
+require_once "./Views/template.php";
+require_once "./Models/Article.class.php";
+require_once "./Models/Model.class.php";
+require_once "./Models/ArticleManager.php";
 
 
 ?>
@@ -25,17 +25,17 @@ require_once "Models/ArticleManager.php";
         ?>
 
 
-        <?php for ($i = 0; $i<count($articles); $i++) : ?>
+      <?//php for ($i = 0; $i<count($articles); $i++) : ?>
           
   
-            <img src=" <?= $articles[$i]->getImageArticle(); ?>" alt="">
-            <?= $articles[$i]->getNomArticle(); ?> 
-            <?= $articles[$i]->getDescriptionArticle(); ?>
-            <?= $articles[$i]->getTailleArticle(); ?> 
-            <?= $articles[$i]->getRefArticle(); ?><br>
+          <!-- <img src=" <? //=$articles[$i]->getImageArticle(). ?>" alt=""> -->
+          <?//=$articles[$i]->getNomArticle(); ?> 
+          <? //=$articles[$i]->getDescriptionArticle(); ?>
+          <? //=$articles[$i]->getTailleArticle(); ?> 
+          <? //=$articles[$i]->getRefArticle(); ?><br>
 
-            
-        <?php endfor; ?>
+          
+      <?//php endfor; ?>
 
     </div>
 
