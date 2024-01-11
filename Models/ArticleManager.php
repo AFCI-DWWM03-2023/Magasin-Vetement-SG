@@ -1,6 +1,6 @@
 <?php
-require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG/Models/Model.class.php";
-require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG/Models/Article.class.php";
+require_once "./Models/Model.class.php";
+require_once "./Models/Article.class.php";
 
 class ArticleManager extends BDConnexion{
     private $articles;

@@ -1,6 +1,6 @@
 <?php
-require_once "Model.class.php";
-require_once "Article.class.php";
+require_once "./Model.class.php";
+require_once "./Article.class.php";
 
 class ArticleManager extends BDConnexion{
     private $article;

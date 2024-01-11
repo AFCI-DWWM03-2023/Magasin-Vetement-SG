@@ -1,6 +1,6 @@
 <?php
 
-require_once "Models/ArticleManager.php";
+require_once "./Models/ArticleManager.php";
 // require_once "Models/Model.class.php";
 
 class ArticleController{

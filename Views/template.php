@@ -17,6 +17,19 @@
         <div>
             <a href="#"><img src="/public/images/panier.png" alt=""></a>
         </div>
-        <nav>Menu</nav>
+        <section class="showcase">
+      <div class="menu">
+        <ul>
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+          <li><a href="#">Menu 4</a></li>
+          <li><a href="#">Menu 5</a></li>
+        </ul>
+      </div>
+    </section>
+        <button class="btn">Menu</button>
     </header>
+
+    <script src="/script.js"> </script>
 <?= $content ?>

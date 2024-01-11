@@ -200,6 +200,30 @@ footer button:hover .main-block {
     width: 50%;
   }
 }
+.btn {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  right: 200px;
+  transition: 0.8s;
+}
+.btn.active {
+  right: 200px;
+}
+.showcase {
+  position: absolute;
+  top: -1500px;
+  height: 100%;
+  width: 10%;
+  background: #313030;
+  transition: 0.8s;
+}
+.showcase.active {
+  background: #313030;
+  top: -100px;
+  bottom: 1px;
+  background-image: none;
+}
 @media screen and (max-width: 768px) {
   body {
     width: 768px;
