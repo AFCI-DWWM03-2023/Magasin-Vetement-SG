@@ -11,8 +11,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
+// =================================================================
 
+// ----------------------------------------------------------------
 header{
     background-color: rgb(77, 71, 71);
     display: flex;
@@ -233,12 +236,12 @@ footer{
       width: 10%;
       height: 10%;
       right: 200px;
-      transition: 0.8s;
+      transition: 0.3s;
     }
     .btn.active
     {
       right: 200px;
-
+        opacity: 0;
     }
 
     .showcase
@@ -249,13 +252,17 @@ footer{
       width: 10%;
       background: rgb(49, 48, 48);
       transition: 0.8s;
+      background-image: none;
+      overflow: hidden; /* Hide horizontal scrollbar */
     }
     .showcase.active
     {
       background: rgb(49, 48, 48);
-      top: -100px;
+      top: 0px;
       bottom: 1px;
-      background-image: none;
+      overflow: hidden; /* Hide horizontal scrollbar */
+
+
     }
 
 

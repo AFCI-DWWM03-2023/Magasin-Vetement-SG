@@ -205,10 +205,11 @@ footer button:hover .main-block {
   width: 10%;
   height: 10%;
   right: 200px;
-  transition: 0.8s;
+  transition: 0.3s;
 }
 .btn.active {
   right: 200px;
+  opacity: 0;
 }
 .showcase {
   position: absolute;
@@ -217,12 +218,16 @@ footer button:hover .main-block {
   width: 10%;
   background: #313030;
   transition: 0.8s;
+  background-image: none;
+  overflow: hidden;
+  /* Hide horizontal scrollbar */
 }
 .showcase.active {
   background: #313030;
-  top: -100px;
+  top: 0px;
   bottom: 1px;
-  background-image: none;
+  overflow: hidden;
+  /* Hide horizontal scrollbar */
 }
 @media screen and (max-width: 768px) {
   body {

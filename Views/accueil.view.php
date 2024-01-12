@@ -12,6 +12,9 @@ require_once "./Models/ArticleManager.php";
 <main>
 
     <div>
+
+
+    <!-- ------------------------------------------------------------------------ -->
         
         <!-- <h3>Image</h3>
         <h3>Titre</h3>
@@ -85,5 +88,6 @@ require_once "./Models/ArticleManager.php";
 </footer>
 
 </body>
+
 
 </html>
