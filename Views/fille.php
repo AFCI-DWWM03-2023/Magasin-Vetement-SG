@@ -1,11 +1,12 @@
 <?php ob_start();
 
 $content = ob_get_clean();
-require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG/template.php";
-require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG//class/Article.class.php";
-require_once "/Users/DWWM/Desktop/RepoOrga/Magasin-Vetement-SG/class/ArticleManager.php";
+require_once "../Views/template.php";
+require_once "../Models/Article.class.php";
+require_once "../Models/ArticleManager.php";
 
 ?>
+  <link rel="stylesheet" href="../Genres/Fille/style.css">
     <main>
         <h2>Filles</h2>
         <div>

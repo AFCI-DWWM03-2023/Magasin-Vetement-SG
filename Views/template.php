@@ -20,11 +20,14 @@
         <section class="showcase">
       <div class="menu">
         <ul>
-          <li><a href="#">Menu 1</a></li>
-          <li><a href="#">Menu 2</a></li>
-          <li><a href="#">Menu 3</a></li>
-          <li><a href="#">Menu 4</a></li>
-          <li><a href="#">Menu 5</a></li>
+          <a href="/Views/accueil.view.php">Accueil</a>
+          <a href="/Views/homme.php">Homme</a>
+          <a href="/Views/femme.php">Femme</a>
+          <a href="/Views/garcon.php">Garçon</a>
+          <a href="/Views/fille.php">Fille</a>
+          <a href="#">Panier</a>
+          <a href="#">A propos</a>
+          <button class="closeMenu">X</button>
         </ul>
       </div>
     </section>
