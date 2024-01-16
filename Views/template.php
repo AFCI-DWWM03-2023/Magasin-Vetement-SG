@@ -11,11 +11,11 @@
 <body>
     <header>
         <div>
-            <a href="/Views/crud.php"><img srcset="/public/images/Logo_Small.jpg 384w, /public/images/Logo_Medium.jpg 768w, /public/images/Logo.jpg 1920w" sizes="(max-width:1920px) 384px,768,1920px" src="/public/images/Logo.jpg" alt="Logo"></a>
+            <a href="/Views/accueil.view.php"><img srcset="/public/images/Logo_Small.jpg 384w, /public/images/Logo_Medium.jpg 768w, /public/images/Logo.jpg 1920w" sizes="(max-width:1920px) 384px,768,1920px" src="/public/images/Logo.jpg" alt="Logo"></a>
         </div>
         <input placeholder="Search...">
         <div>
-            <a href="#"><img src="/public/images/panier.png" alt=""></a>
+            <a href="/Views/panier.view.php"><img src="/public/images/panier.png" alt=""></a>
         </div>
         <section class="showcase">
       <div class="menu">
@@ -26,11 +26,12 @@
           <a href="/Views/garcon.php">Garçon</a>
           <a href="/Views/fille.php">Fille</a>
           <a href="#">Panier</a>
-          <a href="#">A propos</a>
+          <a href="/Views/crud.php">GESTION DU STOCK</a>
           <button class="closeMenu">X</button>
         </ul>
       </div>
     </section>
+    <a href="/login-page/index.html"><img src="/images/icons8-login-50.png" alt=""></a>
         <button class="btn">Menu</button>
     </header>
 

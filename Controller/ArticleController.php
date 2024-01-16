@@ -1,6 +1,6 @@
 <?php
 
-require_once "./Models/ArticleManager.php";
+require_once "C:\Users\DWWM\Desktop\Repo Orga\Magasin-Vetement-SG\Models\ArticleManager.php";
 // require_once "Models/Model.class.php";
 
 class ArticleController{

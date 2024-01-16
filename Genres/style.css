@@ -1,0 +1,9 @@
+main{
+    height: 110vh;
+    width: 100%;
+    background-image: url('/public/images/pexels-robin-1020370.jpg');
+    background-color: #9aaaaa;
+    background-size:110vh 140vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -27,9 +27,9 @@ require_once "C:\Users\DWWM\Desktop\Repo Orga\Magasin-Vetement-SG\Models\Article
 
         ?>
 
-<article>aaa</article>
-<article>aaa</article>
-<article>aaa</article>
+<article><a href="">lien</a></article>
+<article><a href="">lien2</a></article>
+<article><a href="">lien3</a></article>
       <?//php for ($i = 0; $i<count($articles); $i++) : ?>
           
   
