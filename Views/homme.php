@@ -16,10 +16,6 @@ require_once "../Models/ArticleManager.php";
         <article><img src="/Images/vetementhomme.jpg" alt="vetement homme"></article>
         <article><img src="/Images/vetementhomme.jpg" alt="vetement homme"></article>
         <article><img src="/Images/vetementhomme.jpg" alt="vetement homme"></article>
-        <article><img src="/Images/vetementhomme.jpg" alt="vetement homme"></article>
-        <article><img src="/Images/vetementhomme.jpg" alt="vetement homme"></article>
-        <article><img src="/Images/vetementhomme.jpg" alt="vetement homme"></article>
-        <article><img src="/Images/vetementhomme.jpg" alt="vetement homme"></article>
         </div>
     </main>
 </body>
