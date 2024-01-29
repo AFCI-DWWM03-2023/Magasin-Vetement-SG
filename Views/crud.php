@@ -12,7 +12,7 @@ require_once "C:\Users\DWWM\Desktop\Repo Orga\Magasin-Vetement-SG\Controller/Art
 <tr>
             <th>Image</th>
             <th>Titre</th>
-            <th>Nombre de pages</th>
+            <th>Article</th>
             <th>Actions</th>
         </tr>
 
